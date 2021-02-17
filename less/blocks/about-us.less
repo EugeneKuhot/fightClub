@@ -71,12 +71,35 @@
   line-height: 25px;
 }
 
+.about-us__item {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.about-us__item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -40px;
+  width: 30px;
+  height: 35px;
+  background: url(../img/svg/boxing-glove.svg) no-repeat;
+  background-size: contain;
+}
+
 .about-us__quotes {
   width: 35px;
   height: 25px;
   position: absolute;
   top: 50px;
   left: 45px;
+}
+
+.about-us__text {
+  color: #fff;
+  text-align: center;
 }
 
 .about-us__cite::after {
@@ -87,6 +110,7 @@
   height: 100%;
   position: absolute;
   right: -499px;
+  top: 0;
 }
 
 .animated .bounce-in-left {
