@@ -44,6 +44,7 @@
 }
 
 .Phone.is-animating {
+  display: none;
   animation: phone-outer 3000ms infinite;
 
   &::before {
@@ -130,11 +131,18 @@
 
 
 .main-bg-wrap {
-  background: url("../img/png/main.png") no-repeat 90%;
-  background-size: contain;
+  background-image: url("../img/png/main.png"), url("../img/png/logo.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 95%, 45%;
+  background-size: contain, 50%;
 }
 
 
+@media (max-width: 900px) {
+  .Phone.is-animating {
+   display: block;
+  }
+}
 
 
 .circle{
@@ -215,31 +223,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @color: #b0b0b0;
-.bg {
-  background: url(https://vignette.wikia.nocookie.net/thehungergames/images/3/31/Cassandra_Oracion.jpg) no-repeat center;
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  filter: blur(7px);
-}
 .c-scroll-icon {
   width: 21px;
   height: 100px;

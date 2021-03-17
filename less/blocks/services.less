@@ -3,52 +3,34 @@
   padding: 45px 0;
 }
 
-.services__tabs {
+.services__service-list {
   display: flex;
   justify-content: space-between;
-  width: 75%;
-  margin: 0 auto 70px;
-}
-
-.services__tabs-item button {
-  position: relative;
   width: 100%;
-  height: 100%;
-  border: none;
-  background: none;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 25px;
-  line-height: 25px;
-  color: #9A9A9A;
-  cursor: pointer;
-  transition: all .3s ease;
 }
 
-.services__tabs-item button:hover,
-.services__tabs-item button:focus {
-  color: #FF8A00;
-  transition: all .3s ease;
+.services__link {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.services__tabs-item button.active {
-  color: #1E1E1E;
-  transition: all .3s ease;
+.partners__title {
+  color: #2c5dbf;
 }
 
-.services__tabs-item button.active::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 8px;
-  width: 100%;
-  z-index: -1;
-  bottom: -12px;
-  background: #FF8A00;
+.services-title.about-us__title {
+  color: #000;
 }
 
-.services__service-list {
-  width: 53%;
+.services__webpages-wrap {
+  margin-top: 50px;
+}
+
+.partner-logo {
+  width: 300px;
 }
 
 .services__service-item button {
@@ -82,6 +64,7 @@
 .services__tab-wrap {
   display: none;
 }
+
 
 .services__tab-wrap.active {
   display: flex;

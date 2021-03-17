@@ -9,9 +9,6 @@
   const header = document.querySelector(`.header`);
   const mobileGreetingsList = document.querySelector(`.greetings__mobile-list`);
 
-  function headerOnloadAnimation() {
-    header.classList.add('onload');
-  }
   function greetingsTextBlockAnimate() {
     greetingsText.classList.add('onload');
     greetingsTextBlock.classList.add('onload');
@@ -30,7 +27,6 @@
   }
 
   function onloadAnimation() {
-    headerOnloadAnimation();
     setTimeout(greetingsTextBlockAnimate, 500);
   }
 
