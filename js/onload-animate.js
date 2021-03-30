@@ -6,7 +6,6 @@
   const greetingsTitle = document.querySelector(`.greetings__title`);
   const greetingsStartBtn = document.querySelector(`.greetings__start-btn`);
   const greetingsTextBlock = document.querySelector(`.greetings__desc-block`);
-  const header = document.querySelector(`.header`);
   const mobileGreetingsList = document.querySelector(`.greetings__mobile-list`);
 
   function greetingsTextBlockAnimate() {
@@ -29,6 +28,6 @@
   function onloadAnimation() {
     setTimeout(greetingsTextBlockAnimate, 500);
   }
-
-  window.addEventListener(`load`, onloadAnimation);
+/*
+  window.addEventListener(`load`, onloadAnimation);*/
 })();

@@ -67,6 +67,8 @@
 
 .about-us__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-us__skills-title {
@@ -84,6 +86,9 @@
   position: relative;
   margin-top: 10px;
   font-size: 17px;
+  width: 300px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .about-us__item::before {
@@ -93,7 +98,7 @@
   left: -40px;
   width: 30px;
   height: 35px;
-  background: url(../img/svg/boxing-glove.svg) no-repeat;
+  background: url(../img/svg/medal.svg) no-repeat;
   background-size: contain;
 }
 
