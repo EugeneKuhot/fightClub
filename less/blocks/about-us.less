@@ -69,6 +69,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 35px;
 }
 
 .about-us__skills-title {
@@ -86,19 +87,25 @@
   position: relative;
   margin-top: 10px;
   font-size: 17px;
-  width: 300px;
+  width: 33.3333%;
   font-weight: bold;
   text-transform: uppercase;
+  padding-left: 40px;
 }
 
 .about-us__item::before {
   content: '';
   display: block;
   position: absolute;
-  left: -40px;
+  left: 0px;
   width: 30px;
   height: 35px;
-  background: url(../img/svg/medal.svg) no-repeat;
+  background: url('../img/svg/medal.svg') no-repeat;
+  background-size: contain;
+}
+
+.silver-medal::before {
+  background: url('../img/svg/silver-medal.svg') no-repeat;
   background-size: contain;
 }
 

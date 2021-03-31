@@ -31,7 +31,7 @@
 
   const observer = new IntersectionObserver(aboutUsAnimation, options);
 
-/*  allBlocksForAnimation.forEach(block => observer.observe(block));*/
+  allBlocksForAnimation.forEach(block => observer.observe(block));
 
 
 })();
